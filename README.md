@@ -1,4 +1,4 @@
-# vue3_springboot
+# vue3+typescript
 
 ## Project setup
 ```
@@ -15,5 +15,4 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+###  使用tsx的方式开发vue项目

@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#login_box{
+    height: 100vh;
+    background: url(../image/bg2.jpeg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box {
+    width: 350px;
+    height: 350px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    background: rgba(50,50,50,0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    opacity: 1;
+    animation: dh 0.5s ease-in-out 1;
+    overflow: hidden;
+}
+@keyframes dh {
+    0% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        opacity: 1;
+        width: 350px;
+        height: 350px;
+    }
+}
+.box > h2 {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 30px;
+}
+
+.box .input-box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.box .input-box label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 5px;
+}
+
+.box .input-box input {
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.2);
+    outline: none;
+    padding: 0 12px;
+    color: rgba(255,255,255,0.9);
+    transition: 0.2s;
+}
+
+.box .input-box input:focus {
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.box .btn-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.box .btn-box > a {
+    outline: none;
+    display: block;
+    width: 250px;
+    text-align: end;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+}
+
+.box .btn-box > a:hover {
+    color: rgba(255,255,255,1);
+}
+
+.box .btn-box > div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .btn-box > div > button {
+    outline: none;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.box .btn-box > div > button:nth-of-type(1) {
+    width: 120px;
+    height: 35px;
+    color: rgba(255,255,255,0.9);
+    border: 1px solid rgba(192, 119, 91, 0.7);
+    background: rgba(192, 119, 91, 0.5);
+}
+
+.box .btn-box > div > button:nth-of-type(2) {
+    width: 120px;
+    height: 35px;
+    margin-left: 10px;
+    color: rgba(255,255,255,0.9);
+    border: 1px solid rgba(192, 119, 91, 0.7);
+    background: rgba(192, 119, 91, 0.5);
+}
+
+.box .btn-box > div > button:hover {
+    border: 1px solid rgba(251, 128, 71, 0.7);
+    background: rgba(251, 128, 71, 0.5);
+}
+
+#box_head {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(37, 158, 186, 0.67);
+}
+
+#box_head li {
+    width: 25%;
+    height: 50px;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+#box_head li:link{
+    text-decoration: none;
+}
+#box_head a:hover{
+    text-decoration: none;
+    background-color: rgb(84, 178, 65);
+    transition: 0.5s;
+    border-bottom: 3px solid #1e4b62;
+}
+#hero {
+    width: 100%;
+    height: 400px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+#hero div {
+    width: 20%;
+    margin: 0px 20px;
+    height: 350px;
+    overflow: hidden;
+    background-color: rgba(97, 220, 231, 0.208);
+    border: 1px solid rgba(128, 128, 128, 0.489);
+    border-radius: 15px;
+}
+#hero div img{
+    width: 100%;
+    height: 100%;
+}
+#hero div:hover img{
+   width: 20%;
+   height: 20%;
+   border-radius: 50%;
+   margin-left: 40%;
+   transition: 1s;
+}
+
+#body3{
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+#body3 :nth-child(1){
+    width: 100%;
+    height: 400px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+#body3_right{
+    float: right;
+    width: 40%;
+    height: 400px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+#body3_right a{
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    font-size: 20px;
+}
+#body3_right a:link{
+    text-decoration: none;
+}
+#body3_right a:visited{
+    color: black;
+}
+#body3_right a:hover{
+    color: red;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#box_bottom{
+    margin-top: 500px;
+    margin-bottom: 300px;
+}
+
+div{
+    cursor: default;
+}

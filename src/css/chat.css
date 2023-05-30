@@ -1,0 +1,153 @@
+
+.chat_box{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+.chat_rightbox{
+    width: 60%;
+    height: 80%;
+    background: rgba(50,50,50,0.7);
+    margin-left: 20%;
+    margin-top: 6%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat_button{
+    letter-spacing: 1px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 15%;
+    height: 20%;
+    margin-right: 3%;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.2);
+    outline: none;
+    padding: 0 12px;
+    color: rgba(255,255,255,0.9);
+    transition: 0.2s;
+}
+textarea{font-family:Arial, Verdana, sans-serif;}
+.chat_textarea{
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.2);
+    outline: none;
+    padding: 0 12px;
+    color: rgba(255,255,255,0.9);
+    transition: 0.2s;
+    resize: none;
+}
+
+.green_message{
+    color: white;
+    text-align: end;
+    height: auto;
+    word-break:break-all;
+}
+.blue_message{
+    color: white;
+    text-align: start;
+    height: auto;
+    word-break:break-all;
+}
+.bubble_message_left{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background: rgb(53, 116, 188);
+    margin-top: 1px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    margin-right: 30%;
+    
+}
+.bubble_message_right{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background: rgb(72, 177, 93);
+    margin-top: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    float: right;
+    margin-left: 30%;
+    
+}
+.message_box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.message_box::-webkit-scrollbar {
+    width: 1%;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.message_box::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #ccc1c1;
+}
+
+.message_box::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /* background: rgba(15, 15, 15, 0.3); */
+}
+.message_box1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.message_box2{
+    float: right;
+    margin-top: 10px;
+}
+.avatar_message{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+    top:2%;
+    overflow: hidden;
+}
+.avatar_message>img{
+    width:50px;
+    height:50px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.message_name{
+    color: rgb(255, 255, 255);
+    margin-left: 2px;
+    font-size: 12px;
+}
+.message_box111{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
